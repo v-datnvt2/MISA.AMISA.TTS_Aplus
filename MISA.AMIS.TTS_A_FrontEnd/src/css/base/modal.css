@@ -1,0 +1,106 @@
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, .4);
+    opacity: 1;
+    z-index: 50;
+}
+
+.modal-zone {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: calc(50vh - 312px);
+    margin-left: calc(50vw - 450px - 178px);
+    width: 900px;
+    min-width: 700px;
+    height: 600px;
+    min-height: 500px;
+    background-color: #fff;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    padding: 12px 10px 20px 32px;
+    z-index: 51;
+}
+
+.modal {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.md-header {
+    height: fit-content;
+    padding-bottom: 20px;
+    /* padding: 20px 20px; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+.md-header .title {
+    font-family: 'notosans-bold';
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
+    height: 32px;
+}
+
+.md-header .checkbox {
+    margin-top: 8px;
+}
+
+.md-header .btn {
+    margin-left: 6px;
+}
+
+.md-content-grid {
+    height: fit-content;
+    min-height: calc(100% - 72px - 90px);
+    padding-right: 22px;
+}
+
+.md-content-row {
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.md-content-col {
+    width: calc(50% - 0px);
+    height: fit-content;
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+}
+
+.md-content-row .md-input-row {
+    padding-bottom: 12px;
+}
+
+.md-footer {
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.md-footer .footer-top {
+    height: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.md-footer .footer-bottom {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid blue; */
+}

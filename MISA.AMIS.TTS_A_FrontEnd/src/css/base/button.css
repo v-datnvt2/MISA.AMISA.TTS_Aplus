@@ -1,0 +1,80 @@
+button {
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+
+.button {
+    height: 36px;
+    width: fit-content;
+    min-width: 24px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #2ca01c;
+    background-repeat: no-repeat;
+    line-height: 36px;
+    outline: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.button.primary:hover {
+    background-color: #35bf22;
+}
+
+.button.primary:active {
+    background-color: #2ca01c;
+}
+
+.button.secondary {
+    line-height: 34px;
+    color: #111111;
+    background-color: #ffffff;
+    border: 1px solid #8d9096;
+}
+
+.button.secondary.selected {
+    background-color: #d2d3d6;
+}
+
+.button.secondary:active {
+    background-color: #bbbcbc !important;
+}
+
+.button.secondary:hover {
+    background-color: #d2d3d6;
+    color: #111111;
+}
+
+.btn-o-icon {
+    height: 24px;
+    width: 24px;
+    background-color: red;
+}
+
+.button.btn-icon {
+    width: fit-content;
+    min-width: 24px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 16px center;
+    border: 0;
+}
+
+.button.danger {
+    background-color: red;
+    color: #fff;
+}
+
+
+/* .button.warning {
+    background-color: red;
+    color: #fff;
+} */
+
+.button.cancel.notify {
+    display: none;
+}

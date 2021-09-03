@@ -1,0 +1,113 @@
+.content-top-header {
+    height: 48px;
+    width: 100%;
+    display: flex;
+}
+
+.content-top-header .content-top-header-right {
+    height: 100%;
+    width: calc(100% - 226px);
+    /* border-bottom: 1px solid #ccc; */
+    border-left: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.content-top-header .content-top-header-right .store-selector {
+    height: 100%;
+    width: auto;
+    display: flex;
+    position: relative;
+}
+
+.content-top-header-right .store-logo {
+    height: 36px;
+    width: 36px;
+    margin-left: 24px;
+    margin-top: 6px;
+    margin-right: 10px;
+    background-color: rgb(205, 195, 245);
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #0075ff;
+    border-radius: 4px;
+}
+
+.content-top-header-right .dropdown.store {
+    height: 40px;
+    width: 213px;
+    /* display: flex; */
+    /* align-items: center; */
+    border: 0;
+    margin-top: 4px;
+}
+
+.content-top-header-right .dropdown.store .divtext {
+    width: 210px;
+    font-size: 15px;
+    padding-left: 0;
+    margin-right: 10px;
+    font-weight: bold;
+    height: 100%;
+}
+
+.content-top-header-right .dropdown.store .itemwrapper {
+    z-index: 2;
+    /* width: 200px; */
+}
+
+.content-top-header-right .user {
+    height: 100%;
+    width: auto;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.content-top-header-right .user .user-notification {
+    height: 24px;
+    width: 24px;
+    margin-top: 12px;
+    background-size: 20px 20px;
+    background-position: 2px center;
+    background-repeat: no-repeat;
+}
+
+.content-top-header-right .user .reddot {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    background-color: red;
+    border: 2px solid #fff;
+}
+
+.content-top-header-right .user .user-avatar {
+    width: 36px;
+    height: 36px;
+    margin: 5px 15px 5px 15px;
+    border-radius: 50%;
+    background-image: unset;
+    background-size: contain;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+}
+
+.content-top-header-right .user .user-fullname {
+    width: auto;
+    line-height: 48px;
+    font-size: 13px;
+}
+
+.content-top-header-right .user .user-function {
+    height: 16px;
+    width: 16px;
+    margin: 16px 16px 16px 16px;
+    background-image: unset;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,120 @@
+.combobox-zone {
+    position: relative;
+}
+
+.combobox {
+    display: block;
+    min-width: 150px;
+    height: 32px;
+    border: 1px solid #babec5;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    outline: 0;
+    padding: 0;
+    text-align: left;
+    z-index: 5;
+}
+
+.combobox.expanded {
+    width: calc (84px * 3);
+}
+
+.combobox:focus {
+    border-color: #2ca01c;
+}
+
+.combobox.cb-active {
+    border: 1px solid #2ca01c;
+}
+
+.combobox .choice {
+    box-sizing: border-box;
+}
+
+.combobox input.divtext {
+    height: 30px;
+    line-height: 30px;
+    width: calc(100%);
+    font-size: 13px;
+    padding: 0;
+    border: 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.combobox .clearchoice {
+    right: 36px;
+    top: 10px;
+}
+
+.combobox .arrow-zone {
+    height: 30.5px;
+    width: 32px;
+    box-sizing: border-box;
+    border-radius: 0px 2px 2px 0px;
+    background-color: #fff;
+}
+
+.combobox .arrow-zone:hover {
+    background-color: #e0e0e0;
+}
+
+.combobox .arrow-zone .arrow {
+    height: 32px;
+    width: 32px;
+    background-image: unset;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+
+/* .combobox:focus .itemwrapper {
+    display: block !important;
+} */
+
+.combobox .itemwrapper {
+    position: absolute;
+    /* top: 32px; */
+    display: none;
+    margin-top: 1px;
+    max-height: 200px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    line-height: 32px;
+    padding-top: 2px 0;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 1px #e5e5e5;
+    scroll-snap-align: end;
+    overflow: auto;
+}
+
+.combobox .itemwrapper .item {
+    font-size: 13px;
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+
+.combobox .itemwrapper .item:hover {
+    /* color: #35bf22; */
+    color: #2ca01c;
+    background-color: #ebedf0;
+}
+
+.combobox .itemwrapper .item.highlighted {
+    background-color: #ebedf0;
+    color: #2ca01c;
+}
+
+.combobox .itemwrapper .item.selected {
+    color: #ffffff;
+    /* font-weight: bold; */
+    background-color: #2ca01c;
+}

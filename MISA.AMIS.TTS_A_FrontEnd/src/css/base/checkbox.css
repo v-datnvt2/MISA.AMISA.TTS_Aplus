@@ -1,0 +1,49 @@
+.checkboxdiv {
+    cursor: pointer;
+}
+
+.checkbox {
+    height: 32px;
+    width: auto;
+    min-width: 32x;
+    padding: 6px;
+    box-sizing: border-box;
+    line-height: 20px;
+    display: flex;
+    margin-left: 13.5px;
+    margin-right: 13.5px;
+}
+
+.checkbox .checkbox-outline {
+    height: 20px;
+    width: 20px;
+    border: 1px solid transparent;
+    ;
+    position: relative;
+    cursor: pointer;
+    /* box-sizing: border-box; */
+}
+
+.checkbox .checkbox-outline:active {
+    /* border: 1px solid rgba(0, 0, 0, .1); */
+    border-color: rgb(0, 255, 255, 1);
+}
+
+.checkbox .checkbox-outline .checkbox-box {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    height: 18px;
+    width: 18px;
+    box-sizing: border-box;
+    border: 1px solid #afafaf;
+}
+
+.checkbox .checkbox-box.icon-check {
+    border-color: #2ca01c;
+}
+
+.checkbox .checkbox-text {
+    padding-left: 10px;
+    color: #111111;
+}

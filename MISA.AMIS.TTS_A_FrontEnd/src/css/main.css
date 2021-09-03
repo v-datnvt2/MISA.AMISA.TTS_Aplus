@@ -1,0 +1,54 @@
+@import url("./base/button.css");
+@import url("./base/loading.css");
+@import url("./base/icon.css");
+@import url("./base/table.css");
+@import url("./base/field-input.css");
+@import url("./base/popup.css");
+@import url("./base/warning-popup.css");
+@import url("./base/toast-message.css");
+@import url("./common/format.css");
+@import url("./layout/header.css");
+@import url("./layout/menu.css");
+@import url("./layout/content.css");
+@import url("./layout/navigation.css");
+* {
+    font-family: notosans-regular;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+    /* outline: none; */
+}
+
+body {
+    font-size: 13px;
+    color: #111111;
+    margin: 0;
+    overflow: auto;
+    text-overflow: ellipsis;
+    display: flex;
+}
+
+body #app {
+    display: flex;
+    width: 100%;
+}
+
+@font-face {
+    font-family: notosans-regular;
+    src: url("../assets/fonts/notosans-regular.2cb88a13.woff2");
+}
+
+@font-face {
+    font-family: notosans-bold;
+    src: url("../assets/fonts/notosans-bold.3ede5aff.woff2");
+}
+
+@font-face {
+    font-family: notosans-semibold;
+    src: url("../assets/fonts/notosans-semibold.df3e6dc4.woff2");
+}
+
+@font-face {
+    font-family: notosans-italic;
+    src: url("../assets/fonts/notosans-italic.1c1aaac9.woff2");
+}

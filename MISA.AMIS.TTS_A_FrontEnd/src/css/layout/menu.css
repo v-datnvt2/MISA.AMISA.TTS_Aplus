@@ -1,0 +1,100 @@
+    .menu-left {
+        position: relative;
+        height: calc(100vh - 0px);
+        width: 178px;
+        box-sizing: border-box;
+        background-color: #393a3d;
+        overflow-y: auto;
+        /* -webkit-transition-duration: 0.5s; */
+    }
+    
+    .menu-left .menu-left-header {
+        height: 36px;
+        width: 130px;
+        align-items: center;
+        display: flex;
+        padding: 6px 24px;
+        margin-bottom: 14px;
+        /* background-color: #393a3d; */
+    }
+    
+    .menu-left .menu-left-header .menu-toggle {
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+    
+    .menu-left .menu-left-header .logo {
+        height: 32px;
+        width: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 center;
+    }
+    
+    .menu-left.minimized {
+        width: 52px;
+        transition: width 800ms;
+    }
+    
+    .menu-left .menu-item {
+        height: 42px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-left: 6px solid #393a3d;
+        background-color: #393a3d;
+    }
+    
+    .menu-left .menu-item:hover {
+        background-color: #5d5d61;
+        border-color: #5d5d61;
+    }
+    
+    .menu-item.selected {
+        background-color: #5d5d61;
+        border-color: #2ca01c;
+    }
+    
+    .menu-left .menu-item.selected:hover {
+        background-color: #5d5d61;
+        border-color: #2ca01c;
+    }
+    
+    .menu-left .menu-item-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        /* background-image: unset; */
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+    }
+    
+    .menu-item .menu-item-text {
+        height: 42px;
+        line-height: 42px;
+        width: calc(100% -30px);
+        overflow: hidden;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 13px;
+    }
+    
+    .menu-item.selected .menu-item-text {
+        font-weight: 700;
+    }
+    
+    .menu-item .menu-item-text.minimized {
+        width: 0px;
+        transition: width 8s;
+    }
+    
+    .menu-left .toggle-menu.closed {
+        left: 28px;
+        border-radius: 0px 4px 4px 0px;
+        transform: scaleX(-1);
+        /* transition: left 0.5s; */
+    }

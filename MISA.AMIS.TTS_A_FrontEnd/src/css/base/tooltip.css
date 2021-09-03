@@ -1,0 +1,25 @@
+.tooltip-box {
+    width: 100%;
+    height: fit-content;
+}
+
+.tooltiptext {
+    position: absolute;
+    display: none;
+    width: 80%;
+    min-width: 80px;
+    background-color: #111111;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 10px;
+    opacity: 0.9;
+    top: 45px;
+    /* transform: translate(0, -50%); */
+    left: 6%;
+    z-index: 6;
+}
+
+.error:hover .tooltiptext {
+    display: block;
+}

@@ -1,0 +1,125 @@
+.page-navigation {
+    height: 48px;
+    /* width: calc(100% - 85px); */
+    box-sizing: border-box;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    -webkit-transition-duration: 0.5s;
+}
+
+.page-navigation.expanded {
+    width: calc(100vw - 52px - 48px);
+}
+
+.page-navigation .number-total-info {
+    /* margin-left: 32px; */
+    height: 100%;
+    width: 200px;
+}
+
+.page-navigation .number-total-info p {
+    height: 100%;
+    width: 160px;
+    line-height: 48px;
+    padding: 0;
+    margin: 0;
+    text-overflow: hidden;
+    white-space: nowrap;
+}
+
+.page-navigation .number-total-info .number-total {
+    height: 100%;
+    width: auto;
+    font-weight: bold;
+    line-height: 48px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.page-navigation .navigation-button {
+    /* margin-top: 13px; */
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.navigation-button .button {
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    min-width: none !important;
+    padding: 0;
+    margin: 4px 5px 0 5px;
+    /* margin-top: 4px; */
+    background-repeat: no-repeat;
+    /* margin-left: 5px; */
+    /* margin-right: 5px; */
+    border-radius: 2px;
+    color: #111111;
+    background-color: #fff;
+}
+
+.navigation-button .button.selected {
+    border-color: #e0e0e0;
+    border: 1px solid #fff;
+}
+
+.button.prev {
+    width: fit-content;
+}
+
+.button.next {
+    width: fit-content;
+}
+
+.button.page-number {
+    line-height: 24px;
+    color: black;
+    border-radius: 2px;
+}
+
+.button.page-number.selected {
+    font-weight: bold;
+    border: 1px solid #f3f3f3;
+}
+
+.page-navigation .per-page-info {
+    padding-left: 10px;
+    height: 32px;
+    width: fit-content;
+    line-height: 32px;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.page-navigation .per-page-info .combobox,
+.navigation-button {
+    margin-top: 8px;
+}
+
+.page-navigation .combobox .divtext {
+    width: 150px;
+}
+
+.page-navigation .per-page-info .count {
+    width: 20px;
+    color: #111111;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 3px;
+}
+
+.page-navigation .per-page-info .entityClassName {
+    max-width: 160px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.page-navigation .per-page-info .dropdown {
+    height: 32px;
+    line-height: 32px;
+}
